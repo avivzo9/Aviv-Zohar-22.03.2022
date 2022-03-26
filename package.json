@@ -2,7 +2,7 @@
   "name": "herolo_weather_app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/avivzo9/Aviv-Zohar-22.03.2022",
+  "homepage": "https://avivzo9.github.io/Aviv-Zohar-22.03.2022",
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
