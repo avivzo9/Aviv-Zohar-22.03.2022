@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/avivzo9/Aviv-Zohar-22.03.2022/static/css/main.be6f52b1.chunk.css",
-    "main.js": "/avivzo9/Aviv-Zohar-22.03.2022/static/js/main.6d567cd5.chunk.js",
-    "main.js.map": "/avivzo9/Aviv-Zohar-22.03.2022/static/js/main.6d567cd5.chunk.js.map",
-    "runtime-main.js": "/avivzo9/Aviv-Zohar-22.03.2022/static/js/runtime-main.8b466362.js",
-    "runtime-main.js.map": "/avivzo9/Aviv-Zohar-22.03.2022/static/js/runtime-main.8b466362.js.map",
-    "static/js/2.97770202.chunk.js": "/avivzo9/Aviv-Zohar-22.03.2022/static/js/2.97770202.chunk.js",
-    "static/js/2.97770202.chunk.js.map": "/avivzo9/Aviv-Zohar-22.03.2022/static/js/2.97770202.chunk.js.map",
-    "static/js/3.a825bfec.chunk.js": "/avivzo9/Aviv-Zohar-22.03.2022/static/js/3.a825bfec.chunk.js",
-    "static/js/3.a825bfec.chunk.js.map": "/avivzo9/Aviv-Zohar-22.03.2022/static/js/3.a825bfec.chunk.js.map",
-    "index.html": "/avivzo9/Aviv-Zohar-22.03.2022/index.html",
-    "static/css/main.be6f52b1.chunk.css.map": "/avivzo9/Aviv-Zohar-22.03.2022/static/css/main.be6f52b1.chunk.css.map",
-    "static/js/2.97770202.chunk.js.LICENSE.txt": "/avivzo9/Aviv-Zohar-22.03.2022/static/js/2.97770202.chunk.js.LICENSE.txt",
-    "static/media/Forcast.scss": "/avivzo9/Aviv-Zohar-22.03.2022/static/media/sunny_bgi.cdee68ee.png"
+    "main.css": "/Aviv-Zohar-22.03.2022/static/css/main.303cc7ea.chunk.css",
+    "main.js": "/Aviv-Zohar-22.03.2022/static/js/main.6d567cd5.chunk.js",
+    "main.js.map": "/Aviv-Zohar-22.03.2022/static/js/main.6d567cd5.chunk.js.map",
+    "runtime-main.js": "/Aviv-Zohar-22.03.2022/static/js/runtime-main.93d7df4f.js",
+    "runtime-main.js.map": "/Aviv-Zohar-22.03.2022/static/js/runtime-main.93d7df4f.js.map",
+    "static/js/2.97770202.chunk.js": "/Aviv-Zohar-22.03.2022/static/js/2.97770202.chunk.js",
+    "static/js/2.97770202.chunk.js.map": "/Aviv-Zohar-22.03.2022/static/js/2.97770202.chunk.js.map",
+    "static/js/3.a825bfec.chunk.js": "/Aviv-Zohar-22.03.2022/static/js/3.a825bfec.chunk.js",
+    "static/js/3.a825bfec.chunk.js.map": "/Aviv-Zohar-22.03.2022/static/js/3.a825bfec.chunk.js.map",
+    "index.html": "/Aviv-Zohar-22.03.2022/index.html",
+    "static/css/main.303cc7ea.chunk.css.map": "/Aviv-Zohar-22.03.2022/static/css/main.303cc7ea.chunk.css.map",
+    "static/js/2.97770202.chunk.js.LICENSE.txt": "/Aviv-Zohar-22.03.2022/static/js/2.97770202.chunk.js.LICENSE.txt",
+    "static/media/Forcast.scss": "/Aviv-Zohar-22.03.2022/static/media/sunny_bgi.cdee68ee.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8b466362.js",
+    "static/js/runtime-main.93d7df4f.js",
     "static/js/2.97770202.chunk.js",
-    "static/css/main.be6f52b1.chunk.css",
+    "static/css/main.303cc7ea.chunk.css",
     "static/js/main.6d567cd5.chunk.js"
   ]
 }
