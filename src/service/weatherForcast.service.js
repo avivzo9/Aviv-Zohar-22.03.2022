@@ -1,7 +1,7 @@
 import axios from "axios"
 import { storageService } from "./async-storage.service"
 
-const API_KEY = '	Xbcijy9vu8XqmafY2DFOWdh2dfjUdRgK'
+const API_KEY = 'XceX2CagSSR4XuUPkvu6aqtZlPP9S7hJ'
 
 export const weatherForcatsService = {
     getCitiesAutoComplete,

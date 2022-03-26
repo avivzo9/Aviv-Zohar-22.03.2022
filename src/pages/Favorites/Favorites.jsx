@@ -20,17 +20,17 @@ export function Favorites() {
         if (favorites?.length) dispatch(loadCurrForcasts(favorites))
     }, [favorites])
 
-    if (!favorites || !favoritesCurrForcasts?.length) return (<div><h2>!favoritesCurrForcasts.length</h2></div>)
-
     return (
         <>
-            {!!favorites.length && <section className={`favorites-container ${currCity.currForcast.HasPrecipitation ? 'rain-bgi' : 'sunny-bgi'}`}>
+            {favorites && !!favorites.length && <section className={`favorites-container ${currCity.currForcast?.HasPrecipitation ? 'rain-bgi' : 'sunny-bgi'}`}>
                 <h2>Your favorites</h2>
                 <ul className='favorites-list hide-overflow'>
                     {favorites.map((fav, idx) => <FavoritePreview currForcast={favoritesCurrForcasts[idx]} favorite={fav} key={idx} />)}
                 </ul>
             </section>}
-            {!favorites.length && <span>You Have No Favorite Cities Yet</span>}
+            {!favorites || !favorites.length && <section className={`favorites-container ${currCity.currForcast?.HasPrecipitation ? 'rain-bgi' : 'sunny-bgi'}`}>
+                <h2>You dont have favorites yet!</h2>
+            </section>}
         </>
     )
 }

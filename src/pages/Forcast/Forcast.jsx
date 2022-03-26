@@ -13,6 +13,7 @@ export function Forcast() {
     const dispatch = useDispatch()
     const isFahrenheit = useSelector(state => state.forcastReducer.isFahrenheit)
     const currCity = useSelector(state => state.forcastReducer.currCity)
+    const isDarkMode = useSelector(state => state.forcastReducer.isDarkMode)
     const favorites = useSelector(state => state.favoritesReducer.favorites)
     const { forcast, currForcast, cityName } = currCity
 
@@ -53,10 +54,16 @@ export function Forcast() {
         return `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`
     }
 
+    const backgroundImage = () => {
+        if (!currCity.currForcast.HasPrecipitation && isDarkMode) return 'dark-sunny-bgi'
+        else if (currCity.currForcast.HasPrecipitation) return 'rain-bgi'
+        else return 'sunny-bgi'
+    }
+
     if (!currCity?.currForcast) return (<div><h2>Loading Forcast...</h2></div>)
 
     return (
-        <section className={`forcast-container ${currCity.currForcast.HasPrecipitation ? 'rain-bgi' : 'sunny-bgi'}`}>
+        <section className={`forcast-container ${backgroundImage()}`}>
             <div className='forcast-header'>
                 <div>
                     <div>

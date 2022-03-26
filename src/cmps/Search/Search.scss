@@ -7,6 +7,7 @@
     align-items: center;
     width: 100%;
     transition: 0.3s;
+    z-index: 10;
     > :first-child {
         height: 30px;
         overflow: hidden;
@@ -30,11 +31,29 @@
         position: absolute;
         width: 300px;
         left: 0;
-        right: 0;
+        right: -80px;
         margin: 0 auto !important;
         top: 55px;
         > :last-child {
             width: 300px;
+        }
+    }
+}
+
+@include day-grid-normal {
+    .search-container{
+        top: 40px;
+        right: -80px;
+    }
+}
+
+@include day-grid-mobile {
+    .search-container {
+        top: 20px;
+        right: 0;
+        width: 90vw;
+        > :last-child {
+            width: 90vw;
         }
     }
 }
