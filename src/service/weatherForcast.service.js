@@ -30,7 +30,7 @@ async function getForcast(loc = '215854') {
         const storage = await storageService.query(`forcastResults_${loc}`)
         if (storage?.length) return storage;
         console.log('getForcast api!');
-        const forcast = await axios.get(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${loc}?apikey=${API_KEY}`)
+        const forcast = await axios.get(`https://dataservice.accuweather.com/forecasts/v1/daily/5day/${loc}?apikey=${API_KEY}`)
         storageService.postMany(`forcastResults_${loc}`, [...forcast.data.DailyForecasts])
         return forcast.data.DailyForecasts;
     } catch (err) {
@@ -43,7 +43,7 @@ async function getCurrentForcast(loc = '215854') {
         const storage = await storageService.query(`currentForcastResults_${loc}`)
         if (storage?.length) return storage[0];
         console.log('getCurrentForcast api!');
-        const forcast = await axios.get(`http://dataservice.accuweather.com/currentconditions/v1/${loc}?apikey=${API_KEY}`)
+        const forcast = await axios.get(`https://dataservice.accuweather.com/currentconditions/v1/${loc}?apikey=${API_KEY}`)
         storageService.post(`currentForcastResults_${loc}`, forcast.data[0])
         return forcast.data[0];
     } catch (err) {
