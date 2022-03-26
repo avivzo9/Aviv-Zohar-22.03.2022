@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Aviv-Zohar-22.03.2022/static/css/main.303cc7ea.chunk.css",
-    "main.js": "/Aviv-Zohar-22.03.2022/static/js/main.6d567cd5.chunk.js",
-    "main.js.map": "/Aviv-Zohar-22.03.2022/static/js/main.6d567cd5.chunk.js.map",
+    "main.js": "/Aviv-Zohar-22.03.2022/static/js/main.008ffe9e.chunk.js",
+    "main.js.map": "/Aviv-Zohar-22.03.2022/static/js/main.008ffe9e.chunk.js.map",
     "runtime-main.js": "/Aviv-Zohar-22.03.2022/static/js/runtime-main.93d7df4f.js",
     "runtime-main.js.map": "/Aviv-Zohar-22.03.2022/static/js/runtime-main.93d7df4f.js.map",
     "static/js/2.97770202.chunk.js": "/Aviv-Zohar-22.03.2022/static/js/2.97770202.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.93d7df4f.js",
     "static/js/2.97770202.chunk.js",
     "static/css/main.303cc7ea.chunk.css",
-    "static/js/main.6d567cd5.chunk.js"
+    "static/js/main.008ffe9e.chunk.js"
   ]
 }
