@@ -1,0 +1,146 @@
+@import "../../variables";
+@import "../../mixins";
+
+.forcast-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    flex: 1;
+    height: 90%;
+    background-position: center;
+    background-size: cover;
+    margin: 40px;
+    margin-left: 0;
+    * {
+        color: $clr1;
+    }
+}
+
+.forcast-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    > :first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 20px;
+        > :first-child {
+            display: flex;
+            place-items: center;
+            button {
+                background-color: transparent;
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+        > :nth-child(3) {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        > * {
+            margin-bottom: 5px;
+        }
+        img {
+            width: 100px;
+            margin: 0 0 5px 0;
+        }
+    }
+    > :nth-child(2) {
+        > :first-child {
+            font-size: 130px;
+        }
+    }
+}
+
+.rain-bgi {
+    background-image: url("../../assets/img/rain_bgi.png");
+}
+
+.sunny-bgi {
+    background-image: url("../../assets/img/sunny_bgi.png");
+}
+
+.days-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid gray;
+    > :first-child {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding-top: 20px;
+        width: 100%;
+    }
+}
+
+@include day-grid-wide {
+    .days-list {
+        > :first-child {
+            grid-template-columns: repeat(4, 1fr);
+            row-gap: 25px;
+        }
+    }
+}
+
+@include day-grid-normal {
+    .days-list {
+        > :first-child {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@include day-grid-narrow {
+    .forcast-header {
+        height: 25%;
+        > :first-child {
+            img {
+                width: 70px;
+                margin-right: 5px;
+            }
+            > :nth-child(3) {
+                flex-direction: row;
+                align-items: flex-end;
+            }
+        }
+        > :nth-child(2) {
+            > :first-child {
+                font-size: 70px;
+            }
+        }
+    }
+    .days-list {
+        height: 75%;
+        overflow: scroll;
+        > :first-child {
+            height: 100%;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@include day-grid-mobile {
+    .forcast-container {
+        margin: 0;
+        width: 90vw;
+        height: 80%;
+        margin-top: 20px;
+    }
+    .forcast-header {
+        height: 15%;
+    }
+    .days-list {
+        > :first-child {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

@@ -1,0 +1,110 @@
+@import "../../mixins";
+
+.app-header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    width: 15%;
+    height: 90%;
+    margin: 40px;
+    > :first-child {
+        font-size: 15px;
+    }
+    > * {
+        margin: 10px 0;
+    }
+    .link {
+        font-size: 15px;
+    }
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+    cursor: pointer;
+    > :first-child {
+        padding: 0.7em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        * {
+            font-size: 15px;
+        }
+        > :first-child {
+            font-size: 14px;
+            margin-right: 5px;
+        }
+    }
+    &:hover {
+        background-color: #516079;
+        color: white;
+    }
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    > * {
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
+
+@include wide {
+    .app-header-container {
+        width: 50px;
+    }
+    .nav-item {
+        justify-content: center;
+        > :first-child {
+            :first-child {
+                margin: 0;
+            }
+            :nth-child(2) {
+                display: none;
+            }
+        }
+    }
+    .options-container {
+        flex-direction: column;
+        > * {
+            margin: 10px 0;
+        }
+    }
+}
+
+@include day-grid-mobile {
+    .app-header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90vw;
+        height: 5%;
+        > :first-child {
+            display: none;
+        }
+    }
+    .nav-item {
+        width: 15%;
+    }
+    .options-container {
+        flex-direction: row;
+        width: 50vw;
+        > * {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25%;
+            padding: 0.6em;
+        }
+    }
+}
